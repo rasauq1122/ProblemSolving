@@ -1,5 +1,5 @@
 // 2019.12.29
-
+// can be solved by segment-tree
 
 #include <iostream>
 #include <math.h>
