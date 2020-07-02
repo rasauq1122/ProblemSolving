@@ -1,5 +1,6 @@
 a.out
 .vscode
+.gitignore
 output.txt
 input.txt
 _tmp
