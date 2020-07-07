@@ -21,7 +21,6 @@ using namespace std;
 int n, a = 0, b = 1, c = 2;
 
 int main() {
-    freopen("input.txt", "r", stdin);
     ios::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
