@@ -16,6 +16,8 @@
 #define GPQ(T) priority_queue<T,vector<T>,greater<T>>
 #define Q(T) queue<T>
 #define S(T) stack<T>
+#define IMAX ((1LL<<31)-1)
+#define MS(T) memset(T, -1, sizeof(T))
 using namespace std;
 
 int t;
@@ -25,5 +27,5 @@ int main() {
     cin.tie(0);
     cout.tie(0);
     cin >> t;
-    
+
 }
