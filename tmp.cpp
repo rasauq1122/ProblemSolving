@@ -6,6 +6,7 @@
 #include <queue>
 #include <stack>
 #define pii pair<int,int>
+#define piii pair<int,pii>
 #define ff first
 #define ss second
 #define ll long long
@@ -18,6 +19,7 @@
 #define S(T) stack<T>
 #define IMAX ((1LL<<31)-1)
 #define MS(T) memset(T, -1, sizeof(T))
+#define BIT(A,B) !!((A)&(1<<(B)))
 using namespace std;
 
 int t;
