@@ -19,7 +19,7 @@
 #define S(T) stack<T>
 #define IMAX ((1LL<<31)-1)
 #define MS(T) memset(T, -1, sizeof(T))
-#define BIT(A,B) !!((A)&(1<<(B)))
+#define BIT(A,B) (!!((A)&(1<<(B))))
 using namespace std;
 
 int t;
