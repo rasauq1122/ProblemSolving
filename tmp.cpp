@@ -21,6 +21,9 @@
 #define MS(T) memset(T, -1, sizeof(T))
 #define BIT(A,B) (!!((A)&(1<<(B))))
 #define BITS(A,B,C) ((A>>B)&((1<<C-B+1)-1))
+#define endl '\n'
+#define blk ' '
+#define SHOW(A,IX,EX,IY,EY) {cout<<'\n';for(int NI=IX;NI<=EX;NI++){for(int NJ=IY;NJ<=EY;NJ++){cout<<A[NI][NJ]<<' ';}cout<<'\n';}}
 using namespace std;
 
 int t;
@@ -30,5 +33,5 @@ int main() {
     cin.tie(0);
     cout.tie(0);
     cin >> t;
-
+    
 }
