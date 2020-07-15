@@ -19,8 +19,8 @@
 #define S(T) stack<T>
 #define IMAX ((1LL<<31)-1)
 #define MS(T) memset(T, -1, sizeof(T))
-#define BIT(A,B) (!!((A)&(1<<(B))))
-#define BITS(A,B,C) ((A>>B)&((1<<C-B+1)-1))
+#define BIT(A,B) (!!((A)&(1LL<<(B))))
+#define BITS(A,B,C) ((A>>B)&((1LL<<C-B+1)-1))
 #define endl '\n'
 #define blk ' '
 #define SHOW(A,IX,EX,IY,EY) {cout<<'\n';for(int NI=IX;NI<=EX;NI++){for(int NJ=IY;NJ<=EY;NJ++){cout<<A[NI][NJ]<<' ';}cout<<'\n';}}
@@ -33,5 +33,5 @@ int main() {
     cin.tie(0);
     cout.tie(0);
     cin >> t;
-    
+
 }
