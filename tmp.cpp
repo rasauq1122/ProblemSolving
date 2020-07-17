@@ -8,6 +8,8 @@
 #include <stack>
 #include <map>
 #include <set>
+#define endl '\n'
+#define blk ' '
 #define pii pair<int,int>
 #define piii pair<int,pii>
 #define ff first
@@ -21,20 +23,20 @@
 #define Q(T) queue<T>
 #define S(T) stack<T>
 #define IMAX ((1LL<<31)-1)
+#define LMAX (((1LL<<62)-1)*2+1)
 #define MS(T) memset(T, -1, sizeof(T))
 #define BIT(A,B) (!!((A)&(1LL<<(B))))
 #define BITS(A,B,C) ((A>>B)&((1LL<<C-B+1)-1))
-#define endl '\n'
-#define blk ' '
 #define SHOW(A,IX,EX,IY,EY) {cout<<'\n';for(int NI=IX;NI<=EX;NI++){for(int NJ=IY;NJ<=EY;NJ++){cout<<A[NI][NJ]<<' ';}cout<<'\n';}}
+#define IOSFAST() ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+#define TC() int TEST_CASE;cin>>TEST_CASE;for(int TEST_NUM=1;TEST_NUM<=TEST_CASE;TEST_NUM++)
+#define REP(A,B,C) for(int A=B;A<C;A++)
+#define PER(A,B,C) for(int A=C;A>=B;A--) 
 using namespace std;
 
-int t;
+int n, m, k;
 
 int main() {
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-    cout.tie(0);
-    cin >> t;
-
-}
+    IOSFAST();    
+    
+}   
