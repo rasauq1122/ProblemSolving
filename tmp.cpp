@@ -26,20 +26,20 @@
 #define LMAX (((1LL<<62)-1)*2+1)
 #define MS(T) memset(T, -1, sizeof(T))
 #define BIT(A,B) (!!((A)&(1LL<<(B))))
-#define BITS(A,B,C) ((A>>B)&((1LL<<C-B+1)-1))
+#define BITS(A,B,C) (((A)>>(B))&((1LL<<(C)-(B)+1)-1))
 #define SHOW(A,IX,EX,IY,EY) {cout<<'\n';for(int NI=IX;NI<=EX;NI++){for(int NJ=IY;NJ<=EY;NJ++){cout<<A[NI][NJ]<<' ';}cout<<'\n';}}
 #define IOSFAST() ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 #define TC() int TEST_CASE;cin>>TEST_CASE;for(int TEST_NUM=1;TEST_NUM<=TEST_CASE;TEST_NUM++)
-#define VV(T,N,M,K) V(V(T))(N,V(T)(M,K))
+#define VV(T,N,M) V(V(T))(N,V(T)(M))
 #define ST(V) sort(V.begin(),V.end())
 #define rep(A,B,C) for(int A=(B);A<(C);A++)
-#define per(A,B,C) for(int A=(C);A>=(B);A--) 
+#define per(A,B,C) for(int A=(C);A>=(B);A--)
 #define mod(A,B) ((A+B)%B)
 using namespace std;
 
 int n, m, k;
 
 int main() {
-    IOSFAST();    
-    
+    IOSFAST();
+
 }   
