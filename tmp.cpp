@@ -30,8 +30,10 @@
 #define SHOW(A,IX,EX,IY,EY) {cout<<'\n';for(int NI=IX;NI<=EX;NI++){for(int NJ=IY;NJ<=EY;NJ++){cout<<A[NI][NJ]<<' ';}cout<<'\n';}}
 #define IOSFAST() ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 #define TC() int TEST_CASE;cin>>TEST_CASE;for(int TEST_NUM=1;TEST_NUM<=TEST_CASE;TEST_NUM++)
-#define rep(A,B,C) for(int A=B;A<C;A++)
-#define per(A,B,C) for(int A=C;A>=B;A--) 
+#define VV(T,N,M,K) V(V(T))(N,V(T)(M,K))
+#define ST(V) sort(V.begin(),V.end())
+#define rep(A,B,C) for(int A=(B);A<(C);A++)
+#define per(A,B,C) for(int A=(C);A>=(B);A--) 
 #define mod(A,B) ((A+B)%B)
 using namespace std;
 
