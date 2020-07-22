@@ -37,7 +37,7 @@
 #define mod(A,B) ((A+B)%B)
 using namespace std;
 
-int n, m, k, arr[300000], h = 1;
+int n, m, k, arr[500000], h = 1;
 
 void upd(int x) {
     arr[x] = arr[x*2] + arr[x*2+1];
@@ -59,13 +59,13 @@ int main() {
         cin >> x;
         arr[h+i] = x%2;
     }
-    per(i, 1, n) arr[i] = arr[i*2] + arr[i*2+1];
+    per(i, 1, h) arr[i] = arr[i*2] + arr[i*2+1];
     TC() {
         int a, b, c;
         cin >> a >> b >> c;
         if (a == 1) {
-            arr[h+b] = c%2;
-            upd((h+b)/2); 
+            arr[h+b-1] = c%2;
+            upd((h+b-1)/2); 
             continue;
         } 
         int sum = get(b, c, 1, h, 1);
