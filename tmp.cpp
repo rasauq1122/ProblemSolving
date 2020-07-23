@@ -6,6 +6,7 @@
 #include <math.h>
 #include <queue>
 #include <stack>
+#include <deque>
 #include <map>
 #include <set>
 #define endl '\n'
@@ -22,6 +23,7 @@
 #define GPQ(T) priority_queue<T,vector<T>,greater<T>>
 #define Q(T) queue<T>
 #define S(T) stack<T>
+#define DQ(T) deque<T>
 #define IMAX ((1LL<<31)-1)
 #define LMAX (((1LL<<62)-1)*2+1)
 #define MS(T) memset(T, -1, sizeof(T))
