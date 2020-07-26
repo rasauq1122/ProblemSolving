@@ -61,8 +61,5 @@ int main() {
         else if (v[hi] < arr[i]) v[++m] = arr[i], d[i] = m;
         else v[hi] = arr[i], d[i] = hi;
     }
-    cout << m << endl;
-    S(int) s;
-    per(j, 0, n) if (d[j] == m) m--, s.push(arr[j]);
-    for(; !s.empty(); s.pop()) cout << s.top() << blk;
+    cout << m;
 }
