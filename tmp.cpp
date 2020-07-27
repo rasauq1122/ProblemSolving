@@ -15,7 +15,7 @@
 #define piii pair<int,pii>
 #define ff first
 #define ss second
-#define ll long long
+#define int long long
 #define str string
 #define V(T) vector<T>
 #define pb push_back
@@ -45,7 +45,7 @@ using namespace std;
 
 int n, m, k;
 
-int main() {
+signed main() {
     IOSFAST();
 
 }   
