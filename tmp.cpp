@@ -43,7 +43,7 @@
 #define mod(A,B) ((A+B)%B)
 using namespace std;
 
-int n, m, k;
+int n, m, k, h=1;
 
 signed main() {
     IOSFAST();
