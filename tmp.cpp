@@ -49,4 +49,4 @@ int n, m, k, h=1, cnt, da, so = IMAX;
 signed main() {
     IOSFAST();
     
-}   
+}
