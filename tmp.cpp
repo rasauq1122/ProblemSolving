@@ -36,11 +36,12 @@
 #define TC() int TEST_CASE;cin>>TEST_CASE;for(int TEST_NUM=1;TEST_NUM<=TEST_CASE;TEST_NUM++)
 #define VV(T,N,M) V(V(T))(N,V(T)(M))
 #define ST(V) sort(V.begin(),V.end())
+#define PR(V) V.erase(unique(V.begin(),V.end()),V.end())
 #define FIN() freopen("input.txt","r",stdin)
 #define FOUT() freopen("output.txt","w",stdout)
 #define rep(A,B,C) for(int A=(B);A<(C);A++)
 #define per(A,B,C) for(int A=(C)-1;A>=(B);A--)
-#define mod(A,B) ((A+B)%B)
+#define lb(V,K) lower_bound(V.begin(),V.end(),K)-V.begin()
 #define BIG 1000000007
 using namespace std;
 
