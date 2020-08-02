@@ -42,6 +42,7 @@
 #define rep(A,B,C) for(int A=(B);A<(C);A++)
 #define per(A,B,C) for(int A=(C)-1;A>=(B);A--)
 #define lb(V,K) lower_bound(V.begin(),V.end(),K)-V.begin()
+#define dd(a,b) !((a)%(b))
 #define BIG 1000000007
 using namespace std;
 
