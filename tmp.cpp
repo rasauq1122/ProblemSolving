@@ -43,7 +43,9 @@
 #define per(A,B,C) for(int A=(C)-1;A>=(B);A--)
 #define lb(V,K) lower_bound(V.begin(),V.end(),K)-V.begin()
 #define dd(a,b) !((a)%(b))
-#define sc(x) int x;cin>>x;
+#define sc1(x) int x;cin>>x;
+#define sc2(x,y) int x,y;cin>>x>>y;
+#define sc3(x,y,z) int x,y,z;cin>>x>>y>>z;
 #define BIG 1000000007
 using namespace std;
 
