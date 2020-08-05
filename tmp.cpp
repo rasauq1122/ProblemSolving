@@ -30,7 +30,7 @@
 #define ZS(T) memset(T,0,sizeof(T))
 #define BIT(A,B) (!!((A)&(1LL<<(B))))
 #define BITS(A,B,C) (((A)>>(B))&((1LL<<(C)-(B)+1)-1))
-#define SHOW1(A,IX,EX) {cout<<'\n';for(int NI=(IX);NI<(EX);NI++){cout<<A[NI]<<' ';}cout<<'\n';}
+#define SHOW1(A,IX,EX) {for(int NI=(IX);NI<(EX);NI++){cout<<A[NI]<<' ';}cout<<'\n';}
 #define SHOW2(A,IX,EX,IY,EY) {cout<<'\n';for(int NI=(IX);NI<(EX);NI++){for(int NJ=(IY);NJ<(EY);NJ++){cout<<A[NI][NJ]<<' ';}cout<<'\n';}}
 #define IOSFAST() ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 #define TC() int TEST_CASE;cin>>TEST_CASE;for(int TEST_NUM=1;TEST_NUM<=TEST_CASE;TEST_NUM++)
@@ -43,9 +43,9 @@
 #define per(A,B,C) for(int A=(C)-1;A>=(B);A--)
 #define lb(V,K) lower_bound(V.begin(),V.end(),K)-V.begin()
 #define dd(a,b) !((a)%(b))
-#define sc1(x) int x;cin>>x;
-#define sc2(x,y) int x,y;cin>>x>>y;
-#define sc3(x,y,z) int x,y,z;cin>>x>>y>>z;
+#define sc(x) int x;cin>>x
+#define sc2(x,y) int x,y;cin>>x>>y
+#define sc3(x,y,z) int x,y,z;cin>>x>>y>>z
 #define BIG 1000000007
 using namespace std;
 
