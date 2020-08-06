@@ -63,6 +63,7 @@ signed main() {
 
     dist[1] = 0;
     rep(i, 0, n) rep(j, 1, n+1) {
+        // 최단 경로가 (i+1)개의 간선으로 구성되는 모든 경우를 찾는다.
         if (dist[j] == IMAX) continue; 
         rep(k, 0, v[j].size()) {
             if (dist[v[j][k].ff] > dist[j] + v[j][k].ss) {
