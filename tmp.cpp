@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <memory.h>
 #include <math.h>
+#include <string>
 #include <queue>
 #include <stack>
 #include <deque>
@@ -46,6 +47,7 @@
 #define sc(x) int x;cin>>x
 #define sc2(x,y) int x,y;cin>>x>>y
 #define sc3(x,y,z) int x,y,z;cin>>x>>y>>z
+#define scs(s) str s;cin>>s
 #define BIG 1000000007
 using namespace std;
 
