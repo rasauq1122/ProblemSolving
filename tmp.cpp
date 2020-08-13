@@ -14,8 +14,13 @@
 #define blk ' '
 #define pii pair<int,int>
 #define piii pair<int,pii>
+#define piiii pair<pii,pii>
 #define ff first
+#define fff first.first
+#define ffs first.second
 #define ss second
+#define ssf second.first
+#define sss second.second
 #define int long long
 #define str string
 #define V(T) vector<T>
@@ -45,11 +50,11 @@
 #define per(A,B,C) for(int A=(C)-1;A>=(B);A--)
 #define lb(V,K) lower_bound(V.begin(),V.end(),K)-V.begin()
 #define dd(a,b) (!((a)%(b)))
-#define sc(x) int x;cin>>x
-#define sc2(x,y) int x,y;cin>>x>>y
-#define sc3(x,y,z) int x,y,z;cin>>x>>y>>z
-#define scs(s) str s;cin>>s
-#define scc(c) char c;cin>>c
+#define gt(x) int x;cin>>x
+#define gt2(x,y) int x,y;cin>>x>>y
+#define gt3(x,y,z) int x,y,z;cin>>x>>y>>z
+#define gts(s) str s;cin>>s
+#define gtc(c) char c;cin>>c
 #define BIG 1000000007
 using namespace std;
 
