@@ -24,6 +24,7 @@
 #define int long long
 #define str string
 #define V(T) vector<T>
+#define W(T) vector<vector<T>>
 #define pb push_back
 #define PQ(T) priority_queue<T>
 #define GPQ(T) priority_queue<T,vector<T>,greater<T>>
@@ -50,11 +51,13 @@
 #define per(A,B,C) for(int A=(C)-1;A>=(B);A--)
 #define lb(V,K) lower_bound(V.begin(),V.end(),K)-V.begin()
 #define dd(a,b) (!((a)%(b)))
-#define gt(x) int x;cin>>x
-#define gt2(x,y) int x,y;cin>>x>>y
-#define gt3(x,y,z) int x,y,z;cin>>x>>y>>z
-#define gts(s) str s;cin>>s
-#define gtc(c) char c;cin>>c
+#define sz(V) (V.size())
+#define sf(x) int x;cin>>x
+#define sf2(x,y) int x,y;cin>>x>>y
+#define sf3(x,y,z) int x,y,z;cin>>x>>y>>z
+#define sf4(x,y,z,w) int x,y,z,w;cin>>x>>y>>z>>w
+#define sfs(s) str s;cin>>s
+#define sfc(c) char c;cin>>c
 #define BIG 1000000007
 using namespace std;
 
