@@ -26,6 +26,7 @@
 #define V(T) vector<T>
 #define W(T) vector<vector<T>>
 #define pb push_back
+#define frt front
 #define PQ(T) priority_queue<T>
 #define GPQ(T) priority_queue<T,vector<T>,greater<T>>
 #define Q(T) queue<T>
@@ -51,7 +52,7 @@
 #define per(A,B,C) for(int A=(C)-1;A>=(B);A--)
 #define lb(V,K) lower_bound(V.begin(),V.end(),K)-V.begin()
 #define dd(a,b) (!((a)%(b)))
-#define sz(V) (V.size())
+#define sz(V) (int)(V.size())
 #define sf(x) int x;cin>>x
 #define sf2(x,y) int x,y;cin>>x>>y
 #define sf3(x,y,z) int x,y,z;cin>>x>>y>>z
