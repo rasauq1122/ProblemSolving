@@ -26,6 +26,7 @@
 #define V(T) vector<T>
 #define W(T) vector<vector<T>>
 #define pb push_back
+#define mp make_pair
 #define frt front
 #define PQ(T) priority_queue<T>
 #define GPQ(T) priority_queue<T,vector<T>,greater<T>>
