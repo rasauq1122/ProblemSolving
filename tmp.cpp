@@ -3,6 +3,7 @@
 #include <iostream>
 #include <algorithm>
 #include <memory.h>
+#include <random>
 #include <math.h>
 #include <string>
 #include <queue>
@@ -37,8 +38,10 @@
 #define DQ(T)        deque<T>
 #define PQ(T)        priority_queue<T>
 #define GPQ(T)       priority_queue<T,vector<T>,greater<T>>
+#define UID(T)       uniform_int_distribution<T>
 #define MS(T)        memset(T,-1,sizeof(T))
 #define ZS(T)        memset(T,0,sizeof(T))
+#define RANDOM(A,B)  random_device A; mt19937 B(A());
 #define BIT(A,B)     (!!((A)&(1LL<<(B))))
 #define BITS(A,B,C)  (((A)>>(B))&((1LL<<(C)-(B)+1)-1))
 #define FASTIO()     ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
@@ -47,6 +50,7 @@
 #define RVS(V)       reverse((V).begin(),(V).end())
 #define PR(V)        (V).erase(unique((V).begin(),(V).end()),(V).end())
 #define FIN()        freopen("input.txt","r",stdin)
+#define FTC()        freopen("input.txt","w",stdout)
 #define FOUT()       freopen("output.txt","w",stdout)
 #define rep(A,B,C)   for(int A=(B);A<(C);A++)
 #define repc(A,B,C)  for(int A=(B);A<=(C);A++)
