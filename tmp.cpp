@@ -69,6 +69,9 @@
 #define sc2(x,y)      int x,y;cin>>x>>y
 #define sc3(x,y,z)    int x,y,z;cin>>x>>y>>z
 #define sc4(x,y,z,w)  int x,y,z,w;cin>>x>>y>>z>>w
+#define ssc(s)        str s;cin>>s
+#define ssc2(s,t)     str s,t;cin>>s>>t
+#define csc(c)        char c;cin>>c
 #define pf(x)         cout<<(x)<<' '
 #define pf2(x,y)      cout<<(x)<<' '<<(y)<<' '
 #define pf3(x,y,z)    cout<<(x)<<' '<<(y)<<' '<<(z)<<' '
