@@ -86,8 +86,8 @@
 #define stop(x)       {x;break;}
 #define IMAX          ((1LL<<31)-1)
 #define LMAX          (((1LL<<62)-1)*2+1)
-#define YES           cout<<"YES"<<'\n'
-#define NO            cout<<"NO"<<'\n'
+#define YES()         cout<<"YES"<<'\n'
+#define NO()          cout<<"NO"<<'\n'
 #define int           long long
 #define BIG           1000000007
 using namespace std;
