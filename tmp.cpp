@@ -31,10 +31,10 @@
 #define ub            upper_bound
 #define mp            make_pair
 #define clr           clear
-#define vc(T,n)       V(T)(n)
-#define wc(T,n)       W(T)(n)
-#define vc2(T,n,m)    W(T)(n,V(T)(m))
-#define vc3(T,n,m,l)  V(W(T))(n,W(T)(m,V(T)(l)))               
+#define vc(T,n)       vector<T>(n)
+#define wc(T,n)       vector<vector<T>>(n)
+#define vc2(T,n,m)    vector<vector<T>>(n,vector<T>(m))
+#define vc3(T,n,m,l)  vector<vector<vector<T>>>(n,vector<vector<T>>(m,vector<T>(l)))               
 #define V(T)          vector<T>
 #define W(T)          vector<vector<T>>
 #define Q(T)          queue<T>
@@ -65,10 +65,10 @@
 #define dd(a,b)       (!((a)%(b)))
 #define all(V)        (V).begin(),(V).end()
 #define sz(V)         (int)((V).size())
-#define sc(x)         cin>>x
-#define sc2(x,y)      cin>>x>>y
-#define sc3(x,y,z)    cin>>x>>y>>z
-#define sc4(x,y,z,w)  cin>>x>>y>>z>>w
+#define sc(x)         int x;cin>>x
+#define sc2(x,y)      int x,y;cin>>x>>y
+#define sc3(x,y,z)    int x,y,z;cin>>x>>y>>z
+#define sc4(x,y,z,w)  int x,y,z,w;cin>>x>>y>>z>>w
 #define pf(x)         cout<<(x)<<' '
 #define pf2(x,y)      cout<<(x)<<' '<<(y)<<' '
 #define pf3(x,y,z)    cout<<(x)<<' '<<(y)<<' '<<(z)<<' '
