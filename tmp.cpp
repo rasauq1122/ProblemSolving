@@ -11,8 +11,10 @@
 #include <deque>
 #include <map>
 #include <set>
-#define SHOW1(A,IX,EX)       {for(int NI=(IX);NI<(EX);NI++){cout<<A[NI]<<' ';}cout<<'\n';}
+#define SHOW(A,IX,EX)        {for(int NI=(IX);NI<(EX);NI++){cout<<A[NI]<<' ';}cout<<'\n';}
 #define SHOW2(A,IX,EX,IY,EY) {for(int NI=(IX);NI<(EX);NI++){for(int NJ=(IY);NJ<(EY);NJ++){cout<<A[NI][NJ]<<' ';}cout<<'\n';}}
+#define PRINT(V)             {for(int NI=0;NI<(V).size();NI++){cout<<(V[NI])<<' ';}cout<<'\n';}
+#define PRINT2(V)            {for(int NI=0;NI<(V).size();NI++){for(int NJ=0;NJ<(V[NI]).size();NJ++){cout<<V[NI][NJ]<<' ';}cout<<'\n';}}
 #define endl          '\n'
 #define blk           ' '
 #define pii           pair<int,int>
@@ -29,12 +31,15 @@
 #define bp            pop_back
 #define lb            lower_bound
 #define ub            upper_bound
+#define rvs           reverse
 #define mp            make_pair
 #define clr           clear
-#define vc(T,n)       vector<T>(n)
-#define wc(T,n)       vector<vector<T>>(n)
-#define vc2(T,n,m)    vector<vector<T>>(n,vector<T>(m))
-#define vc3(T,n,m,l)  vector<vector<vector<T>>>(n,vector<vector<T>>(m,vector<T>(l)))               
+#define vi(n)         vector<int>(n)
+#define vi2(n,m)      vector<vector<int>>(n,vector<int>(m))
+#define wi(n)         vector<vector<int>>(n)
+#define wi2(n,m)      vector<vector<pair<int,int>>>(n,vector<pair<int,int>>(m))
+#define wp(n)         vector<vector<pair<int,int>>>(n)
+#define wp2(n,m)      vector<vector<pair<int,pair<int,int>>>>(n,vector<pair<int,pair<int,int>>>(m))
 #define V(T)          vector<T>
 #define W(T)          vector<vector<T>>
 #define Q(T)          queue<T>
@@ -45,7 +50,7 @@
 #define UID(T)        uniform_int_distribution<T>
 #define MS(V)         memset(V,-1,sizeof(V))
 #define ZS(V)         memset(V,0,sizeof(V))
-#define SET(V,A)      fill((V).begin(),(V).end(),(A))
+#define FL(V,A)       fill((V).begin(),(V).end(),(A))
 #define RANDOM(A,B)   random_device A; mt19937 B(A());
 #define BIT(A,B)      (!!((A)&(1LL<<(B))))
 #define BITS(A,B,C)   (((A)>>(B))&((1LL<<(C)-(B)+1)-1))
@@ -72,24 +77,24 @@
 #define ssc(s)        str s;cin>>s
 #define ssc2(s,t)     str s,t;cin>>s>>t
 #define csc(c)        char c;cin>>c
-#define pf(x)         cout<<(x)<<' '
-#define pf2(x,y)      cout<<(x)<<' '<<(y)<<' '
-#define pf3(x,y,z)    cout<<(x)<<' '<<(y)<<' '<<(z)<<' '
-#define pf4(x,y,z,w)  cout<<(x)<<' '<<(y)<<' '<<(z)<<' '<<(w)<<' '
+#define rd(x)         cin>>x
+#define rd2(x,y)      cin>>x>>y
+#define rd3(x,y,z)    cin>>x>>y>>z
+#define rd4(x,y,z,w)  cin>>x>>y>>z>>w
+#define pf(x)         cout<<(x)
 #define nl()          cout<<'\n'
 #define pfl(x)        cout<<(x)<<'\n'
-#define pf2l(x,y)     cout<<(x)<<'\n'<<(y)<<'\n'
-#define pf3l(x,y,z)   cout<<(x)<<'\n'<<(y)<<'\n'<<(z)<<'\n'
-#define pf4l(x,y,z,w) cout<<(x)<<'\n'<<(y)<<'\n'<<(z)<<'\n'<<(w)<<'\n'
-#define com(x,y)      x,y;
+#define pf2l(x,y)     cout<<(x)<<' '<<(y)<<'\n'
+#define pf3l(x,y,z)   cout<<(x)<<' '<<(y)<<' '<<(z)<<'\n'
+#define pf4l(x,y,z,w) cout<<(x)<<' '<<(y)<<' '<<(z)<<' '<<(w)<<'\n'
 #define cont(x)       {x;continue;}
 #define stop(x)       {x;break;}
 #define IMAX          ((1LL<<31)-1)
 #define LMAX          (((1LL<<62)-1)*2+1)
-#define YES()         cout<<"YES"<<'\n'
-#define NO()          cout<<"NO"<<'\n'
+#define YES           cout<<"YES"<<'\n'
+#define NO            cout<<"NO"<<'\n'
 #define int           long long
-#define BIG           1000000007
+#define MOD           1000000007
 using namespace std;
 
 int pow(int a, int b, int c) {if (!b) {return 1;} int rtn = pow(a, b/2, c); rtn *= rtn, rtn %= c; if (b%2) {rtn *= a, rtn %= c;} return rtn;}
