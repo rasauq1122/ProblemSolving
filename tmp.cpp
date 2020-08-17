@@ -13,8 +13,8 @@
 #include <set>
 #define SHOW(A,IX,EX)        {for(int NI=(IX);NI<(EX);NI++){cout<<A[NI]<<' ';}cout<<'\n';}
 #define SHOW2(A,IX,EX,IY,EY) {for(int NI=(IX);NI<(EX);NI++){for(int NJ=(IY);NJ<(EY);NJ++){cout<<A[NI][NJ]<<' ';}cout<<'\n';}}
-#define PRINT(V)             {for(int NI=0;NI<(V).size();NI++){cout<<(V[NI])<<' ';}cout<<'\n';}
-#define PRINT2(V)            {for(int NI=0;NI<(V).size();NI++){for(int NJ=0;NJ<(V[NI]).size();NJ++){cout<<V[NI][NJ]<<' ';}cout<<'\n';}}
+#define PRT(V)               {for(int NI=0;NI<(V).size();NI++){cout<<(V[NI])<<' ';}cout<<'\n';}
+#define PRT2(V)              {for(int NI=0;NI<(V).size();NI++){for(int NJ=0;NJ<(V[NI]).size();NJ++){cout<<V[NI][NJ]<<' ';}cout<<'\n';}}
 #define endl          '\n'
 #define blk           ' '
 #define pii           pair<int,int>
@@ -84,9 +84,9 @@
 #define pf(x)         cout<<(x)
 #define nl()          cout<<'\n'
 #define pfl(x)        cout<<(x)<<'\n'
-#define pf2l(x,y)     cout<<(x)<<' '<<(y)<<'\n'
-#define pf3l(x,y,z)   cout<<(x)<<' '<<(y)<<' '<<(z)<<'\n'
-#define pf4l(x,y,z,w) cout<<(x)<<' '<<(y)<<' '<<(z)<<' '<<(w)<<'\n'
+#define pf2(x,y)      cout<<(x)<<' '<<(y)<<'\n'
+#define pf3(x,y,z)    cout<<(x)<<' '<<(y)<<' '<<(z)<<'\n'
+#define pf4(x,y,z,w)  cout<<(x)<<' '<<(y)<<' '<<(z)<<' '<<(w)<<'\n'
 #define cont(x)       {x;continue;}
 #define stop(x)       {x;break;}
 #define IMAX          ((1LL<<31)-1)
