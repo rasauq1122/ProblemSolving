@@ -82,8 +82,8 @@
 #define rd3(x,y,z)    cin>>x>>y>>z
 #define rd4(x,y,z,w)  cin>>x>>y>>z>>w
 #define pf(x)         cout<<(x)
-#define nl()          cout<<'\n'
-#define pfl(x)        cout<<(x)<<'\n'
+#define pf0()         cout<<'\n'
+#define pf1(x)        cout<<(x)<<'\n'
 #define pf2(x,y)      cout<<(x)<<' '<<(y)<<'\n'
 #define pf3(x,y,z)    cout<<(x)<<' '<<(y)<<' '<<(z)<<'\n'
 #define pf4(x,y,z,w)  cout<<(x)<<' '<<(y)<<' '<<(z)<<' '<<(w)<<'\n'
