@@ -23,6 +23,9 @@
 #define bpf4(x,y,z,w)   cout<<' '<<(x)<<' '<<(y)<<' '<<(z)<<' '<<(w)<<'\n'
 #define bpf5(x,y,z,w,u) cout<<' '<<(x)<<' '<<(y)<<' '<<(z)<<' '<<(w)<<' '<<(u)<<'\n'
 
+#define TC()            int TEST_CASE;cin>>TEST_CASE;for(int TEST_NUM=1;TEST_NUM<=TEST_CASE;TEST_NUM++)
+#define FASTIO()        ios::sync_with_stdio(0),cin.tie(0),cout.tie(0)
+
 #define endl            '\n'
 #define blk             ' '
 #define pii             pair<int,int>
