@@ -22,6 +22,8 @@
 #define vp              vector<pair<int,int>>
 #define wi              vector<vector<int>>
 #define wp              vector<vector<pair<int,int>>>
+#define pb              push_back
+#define bp              pop_back
 #define all(v)          (v).begin(), (v).end()
 #define INF             ((1LL<<31)-1)
 #define int             long long
