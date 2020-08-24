@@ -12,6 +12,7 @@
 
 #define TC()            int TEST_CASE;cin>>TEST_CASE;for(int TEST_NUM=1;TEST_NUM<=TEST_CASE;TEST_NUM++)
 #define FASTIO()        ios::sync_with_stdio(0),cin.tie(0),cout.tie(0)
+#define fixed(a)        cout<<fixed;cout.precision(a);
 
 #define endl            '\n'
 #define blk             ' '
@@ -23,7 +24,6 @@
 #define wi              vector<vector<int>>
 #define wp              vector<vector<pair<int,int>>>
 #define pb              push_back
-#define bp              pop_back
 #define all(v)          (v).begin(), (v).end()
 #define INF             ((1LL<<31)-1)
 #define int             long long
@@ -33,5 +33,5 @@ using namespace std;
 
 signed main() {
     FASTIO();
-    
+
 }
