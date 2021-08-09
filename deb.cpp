@@ -27,11 +27,16 @@
 #define all(v)          (v).begin(), (v).end()
 #define INF             ((1LL<<31)-1)
 #define int             long long
+#define itos            to_string
 #define MOD             1000000007
+
+#define IF()           freopen("input.txt","r",stdin)
+#define TF()           freopen("input.txt","w",stdout)
+#define OF()           freopen("output.txt","w",stdout)
 
 using namespace std;
 
 signed main() {
     FASTIO();
-
+	
 }
