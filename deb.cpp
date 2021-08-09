@@ -16,6 +16,7 @@
 
 #define endl            '\n'
 #define blk             ' '
+#define itos            to_string
 #define pii             pair<int,int>
 #define ff              first
 #define ss              second
@@ -29,9 +30,13 @@
 #define int             long long
 #define MOD             1000000007
 
+#define IF()            freopen("input.txt","r",stdin)
+#define TF()            freopen("input.txt","w",stdout)
+#define OF()            freopen("output.txt","w",stdout)
+
 using namespace std;
 
 signed main() {
     FASTIO();
-
+	
 }
