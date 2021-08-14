@@ -6,3 +6,6 @@ _tmp
 goorm.manifest
 .cf
 a.cpp
+a
+a.in
+a.out
