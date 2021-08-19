@@ -34,6 +34,8 @@
 #define TF()            freopen("input.txt","w",stdout)
 #define OF()            freopen("output.txt","w",stdout)
 
+int pow(int a, int b, int c) {if (!b) {return 1;} int rtn = pow(a, b/2, c); rtn *= rtn, rtn %= c; if (b%2) {rtn *= a, rtn %= c;} return rtn;}
+
 using namespace std;
 
 signed main() {
