@@ -3,6 +3,10 @@
 #define prt(V)           {for(int NI=0;NI<(V).size();NI++){cout<<(V[NI])<<' ';}cout<<'\n';}
 #define prt2(V)          {for(int NI=0;NI<(V).size();NI++){for(int NJ=0;NJ<(V[NI]).size();NJ++){cout<<V[NI][NJ]<<' ';}cout<<'\n';}}
 
+#define get1d(V,N)       vector<int> V(N);for(int i=0;i<N;i++){cin>>V[i];}
+#define get2d(V,N,M)     vector<vector<int>> V(N,vector<int>(M));for(int i=0;i<N;i++){for(int j=0;j<M;j++){cin>>V[i][j];}}
+#define getSeg(V,N)      vector<pair<int,int>> V(N);for(int i=0;i<N;i++){int a,b;cin>>a>>b;v[i]={a,b};}
+
 #define pf0()            cout<<'\n'
 #define pf1(x)           cout<<(x)<<'\n'
 #define pf2(x,y)         cout<<(x)<<' '<<(y)<<'\n'
@@ -71,5 +75,6 @@ using namespace std;
 
 signed main() {
     FASTIO();
-	
+    int n;
+    cin>>n;
 }
