@@ -75,6 +75,5 @@ using namespace std;
 
 signed main() {
     FASTIO();
-    int n;
-    cin>>n;
+    
 }
