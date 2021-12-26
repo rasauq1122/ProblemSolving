@@ -68,6 +68,11 @@
 #define TF()             freopen("input.txt","w",stdout)
 #define OF()             freopen("output.txt","w",stdout)
 
+#define RANDOM()         random_device rd;mt19937 seed(rd());
+// int-random-value    : uniform_int_distribution<int> gen(min,max);
+// double-random-value : uniform_real_distribution<double> gen(min,max);
+// how-to-get-value    : gen(seed)
+
 int pow(int a, int b, int c) {if (!b) {return 1;} int rtn = pow(a, b/2, c); rtn *= rtn, rtn %= c; if (b%2) {rtn *= a, rtn %= c;} return rtn;}
 int gcd(int a, int b) {return b ? gcd(b,a%b) : a;}
 
