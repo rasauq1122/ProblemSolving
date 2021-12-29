@@ -3,9 +3,9 @@
 #define prt(V)           {for(int NI=0;NI<(V).size();NI++){cout<<(V[NI])<<' ';}cout<<'\n';}
 #define prt2(V)          {for(int NI=0;NI<(V).size();NI++){for(int NJ=0;NJ<(V[NI]).size();NJ++){cout<<V[NI][NJ]<<' ';}cout<<'\n';}}
 
-#define get1d(V,N)       vector<int> V(N);for(int i=0;i<N;i++){cin>>V[i];}
-#define get2d(V,N,M)     vector<vector<int>> V(N,vector<int>(M));for(int i=0;i<N;i++){for(int j=0;j<M;j++){cin>>V[i][j];}}
-#define getSeg(V,N)      vector<pair<int,int>> V(N);for(int i=0;i<N;i++){int a,b;cin>>a>>b;V[i]={a,b};}
+#define get1d(V,N)       for(int i=0;i<N;i++){cin>>V[i];}
+#define get2d(V,N,M)     for(int i=0;i<N;i++){for(int j=0;j<M;j++){cin>>V[i][j];}}
+#define getSeg(V,N)      for(int i=0;i<N;i++){int a,b;cin>>a>>b;V[i]={a,b};}
 
 #define pf0()            cout<<'\n'
 #define pf1(x)           cout<<(x)<<'\n'
@@ -52,8 +52,8 @@
 #define all(v)           (v).begin(), (v).end()
 
 #define press(v)         (v).erase(unique((v).begin(),(v).end()),(v).end())
-#define bit(a,b)      	 (((a)>>(b))&1)
-#define bits(a,b,c)   	 (((a)>>(b))&((1LL<<(c)-(b)+1)-1))
+#define BIT(a,b)      	 (((a)>>(b))&1)
+#define BITS(a,b,c)   	 (((a)>>(b))&((1LL<<(c)-(b)+1)-1))
 
 #define INF              ((1LL<<31)-1)
 #define MOD              1000000007
@@ -75,6 +75,9 @@
 
 int pow(int a, int b, int c) {if (!b) {return 1;} int rtn = pow(a, b/2, c); rtn *= rtn, rtn %= c; if (b%2) {rtn *= a, rtn %= c;} return rtn;}
 int gcd(int a, int b) {return b ? gcd(b,a%b) : a;}
+int chk_rect(int x, int y, int Mx, int My, int mx = 0, int my = 0) {return mx <= x && x < Mx && my <= y && y < My;};
+
+int dx[4] = {0, 0, 1, -1}, dy[4] = {1, -1, 0, 0};
 
 using namespace std;
 
