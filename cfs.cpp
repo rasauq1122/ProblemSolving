@@ -5,7 +5,7 @@
 
 #define get1d(V,N)       for(int i=0;i<N;i++){cin>>V[i];}
 #define get2d(V,N,M)     for(int i=0;i<N;i++){for(int j=0;j<M;j++){cin>>V[i][j];}}
-#define getSeg(V,N)      for(int i=0;i<N;i++){int a,b;cin>>a>>b;V[i]={a,b};}
+#define getseg(V,N)      for(int i=0;i<N;i++){int a,b;cin>>a>>b;V[i]={a,b};}
 
 #define pf0()            cout<<'\n'
 #define pf1(x)           cout<<(x)<<'\n'
@@ -36,6 +36,8 @@
 #define piii             pair<int,pair<int,int>>
 #define ff               first
 #define ss               second
+#define lbound           lower_bound
+#define ubound           upper_bound
 
 #define vi               vector<int>
 #define vp               vector<pair<int,int>>
