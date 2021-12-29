@@ -54,6 +54,7 @@
 #define press(v)         (v).erase(unique((v).begin(),(v).end()),(v).end())
 #define BIT(a,b)      	 (((a)>>(b))&1)
 #define BITS(a,b,c)   	 (((a)>>(b))&((1LL<<(c)-(b)+1)-1))
+#define dxdy(dx,dy)      int dx[8] = {0, 0, 1, -1, 1, 1, -1, -1}, dy[8] = {1, -1, 0, 0, 1, -1, 1, -1};
 
 #define INF              ((1LL<<31)-1)
 #define MOD              1000000007
@@ -75,9 +76,7 @@
 
 int pow(int a, int b, int c) {if (!b) {return 1;} int rtn = pow(a, b/2, c); rtn *= rtn, rtn %= c; if (b%2) {rtn *= a, rtn %= c;} return rtn;}
 int gcd(int a, int b) {return b ? gcd(b,a%b) : a;}
-int chk_rect(int x, int y, int Mx, int My, int mx = 0, int my = 0) {return mx <= x && x < Mx && my <= y && y < My;};
-
-int dx[4] = {0, 0, 1, -1}, dy[4] = {1, -1, 0, 0};
+int safe(int x, int y, int Mx, int My, int mx = 0, int my = 0) {return mx <= x && x < Mx && my <= y && y < My;};
 
 using namespace std;
 
