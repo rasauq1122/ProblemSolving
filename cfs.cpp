@@ -48,13 +48,14 @@
 
 #define pb               push_back
 #define bp               pop_back
+#define mp               make_pair
 #define itos             to_string
 #define all(v)           (v).begin(), (v).end()
 
 #define press(v)         (v).erase(unique((v).begin(),(v).end()),(v).end())
 #define BIT(a,b)      	 (((a)>>(b))&1)
 #define BITS(a,b,c)   	 (((a)>>(b))&((1LL<<(c)-(b)+1)-1))
-#define dxdy(dx,dy)      int dx[8] = {0, 0, 1, -1, 1, 1, -1, -1}, dy[8] = {1, -1, 0, 0, 1, -1, 1, -1};
+#define dxdy(dx,dy)      int dx[8] = {0, 0, 1, -1, 1, 1, -1, -1}, dy[8] = {1, -1, 0, 0, 1, -1, 1, -1}
 
 #define INF              ((1LL<<31)-1)
 #define MOD              1000000007
@@ -69,7 +70,7 @@
 #define TF()             freopen("input.txt","w",stdout)
 #define OF()             freopen("output.txt","w",stdout)
 
-#define RANDOM()         random_device rd;mt19937 seed(rd());
+#define RANDOM()         random_device rd;mt19937 seed(rd())
 // int-random-value    : uniform_int_distribution<int> gen(min,max);
 // double-random-value : uniform_real_distribution<double> gen(min,max);
 // how-to-get-value    : gen(seed)
