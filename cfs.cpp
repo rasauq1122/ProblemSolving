@@ -5,7 +5,7 @@
 
 #define get1d(V,N)       vector<int> V(N);for(int i=0;i<N;i++){cin>>V[i];}
 #define get2d(V,N,M)     vector<vector<int>> V(N,vector<int>(M));for(int i=0;i<N;i++){for(int j=0;j<M;j++){cin>>V[i][j];}}
-#define getSeg(V,N)      vector<pair<int,int>> V(N);for(int i=0;i<N;i++){int a,b;cin>>a>>b;v[i]={a,b};}
+#define getSeg(V,N)      vector<pair<int,int>> V(N);for(int i=0;i<N;i++){int a,b;cin>>a>>b;V[i]={a,b};}
 
 #define pf0()            cout<<'\n'
 #define pf1(x)           cout<<(x)<<'\n'
