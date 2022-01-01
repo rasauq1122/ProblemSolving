@@ -44,7 +44,7 @@
 #define vpp              vector<pair<int,pair<int,int>>>
 #define wi               vector<vector<int>>
 #define wp               vector<vector<pair<int,int>>>
-#define wpp              vector<vector<pair<int,pair<int,int>>
+#define wpp              vector<vector<pair<int,pair<int,int>>>>
 
 #define pqueue           priority_queue
 
