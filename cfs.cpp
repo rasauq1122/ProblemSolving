@@ -1,11 +1,27 @@
 #include <bits/stdc++.h>
 
-#define prt(V)           {for(int NI=0;NI<(V).size();NI++){cout<<(V[NI])<<' ';}cout<<'\n';}
-#define prt2(V)          {for(int NI=0;NI<(V).size();NI++){for(int NJ=0;NJ<(V[NI]).size();NJ++){cout<<V[NI][NJ]<<' ';}cout<<'\n';}}
+#define pvec(V)          {int len=(V).size();for(int NI=0;NI<len;NI++){cout<<(V[NI])<<' ';}cout<<'\n';}
+#define pvec2(V)         {int len=(V).size();for(int NI=0;NI<len;NI++){int len2=(V[NI]).size();for(int NJ=0;NJ<len2;NJ++){cout<<V[NI][NJ]<<' ';}cout<<'\n';}}
+#define pvecseg(V)       {int len=(V).size();for(int NI=0;NI<len;NI++){cout<<(V[NI]).ff<<(V[NI]).ss<<'\n';}}
 
-#define get1d(V,N)       for(int i=0;i<N;i++){cin>>V[i];}
-#define get2d(V,N,M)     for(int i=0;i<N;i++){for(int j=0;j<M;j++){cin>>V[i][j];}}
-#define getseg(V,N)      for(int i=0;i<N;i++){int a,b;cin>>a>>b;V[i]={a,b};}
+#define parr(ARR,N)      {for(int NI=0;NI<N;NI++){cout<<(ARR[NI])<<' ';}cout<<'\n';}
+#define parr2(ARR,N,M)   {for(int NI=0;NI<N;NI++){for(int NJ=0;NJ<M;NJ++){cout<<ARR[NI][NJ]<<' ';}cout<<'\n';}}  
+#define pvecseg(ARR)     {for(int NI=0;NI<N;NI++){cout<<(V[NI]).ff<<(V[NI]).ss<<'\n';}}
+
+#define gvec(V)          {int len=(V).size();for(int NI=0;NI<len;NI++){cin>>V[NI];}}
+#define gvec2(V)         {int len=(V).size();for(int NI=0;NI<len;NI++){int len2=(V[NI]).size();for(int NJ=0;NJ<len2;NJ++){cin>>V[NI][NJ];}}}
+#define gvecseg(V)       {int len=(V).size();for(int i=0;i<N;i++){int a,b;cin>>a>>b;V[i]={a,b};}}   
+
+#define garr(ARR,N)      {for(int i=0;i<N;i++){cin>>ARR[i];}
+#define garr2(ARR,N,M)   {for(int i=0;i<N;i++){for(int j=0;j<M;j++){cin>>ARR[i][j];}}}
+#define garrseg(ARR,N)   {for(int i=0;i<N;i++){int a,b;cin>>a>>b;ARR[i]={a,b};}}
+
+#define rd1(x)           cin>>(x)
+#define rd2(x,y)         cin>>(x)>>(y)
+#define rd3(x,y,z)       cin>>(x)>>(y)>>(z)
+#define rd4(x,y,z,w)     cin>>(x)>>(y)>>(z)>>(w)
+#define rd5(x,y,z,w,u)   cin>>(x)>>(y)>>(z)>>(w)>>(u)
+#define rd6(x,y,z,w,u,v) cin>>(x)>>(y)>>(z)>>(w)>>(u)>>(v)
 
 #define pf0()            cout<<'\n'
 #define pf1(x)           cout<<(x)<<'\n'
@@ -72,14 +88,14 @@
 #define TF()             freopen("input.txt","w",stdout)
 #define OF()             freopen("output.txt","w",stdout)
 
-#define RANDOM()         random_device rd;mt19937 seed(rd())
+#define RANDOM()         random_device rand;mt19937 seed(rand())
 // int-random-value    : uniform_int_distribution<int> gen(min,max);
 // double-random-value : uniform_real_distribution<double> gen(min,max);
 // how-to-get-value    : gen(seed)
 
 int pow(int a, int b, int c) {if (!b) {return 1;} int rtn = pow(a, b/2, c); rtn *= rtn, rtn %= c; if (b%2) {rtn *= a, rtn %= c;} return rtn;}
 int gcd(int a, int b) {return b ? gcd(b,a%b) : a;}
-int safe(int x, int y, int Mx, int My, int mx = 0, int my = 0) {return mx <= x && x < Mx && my <= y && y < My;};
+int safe(int x, int y, int Mx, int My, int mx = 0, int my = 0) {return mx <= x && x < Mx && my <= y && y < My;}
 
 using namespace std;
 
