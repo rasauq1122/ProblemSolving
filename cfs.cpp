@@ -12,7 +12,7 @@
 #define gvec2(V)         {int len=(V).size();for(int NI=0;NI<len;NI++){int len2=(V[NI]).size();for(int NJ=0;NJ<len2;NJ++){cin>>V[NI][NJ];}}}
 #define gvecseg(V)       {int len=(V).size();for(int i=0;i<N;i++){int a,b;cin>>a>>b;V[i]={a,b};}}   
 
-#define garr(ARR,N)      {for(int i=0;i<N;i++){cin>>ARR[i];}
+#define garr(ARR,N)      {for(int i=0;i<N;i++){cin>>ARR[i];}}
 #define garr2(ARR,N,M)   {for(int i=0;i<N;i++){for(int j=0;j<M;j++){cin>>ARR[i][j];}}}
 #define garrseg(ARR,N)   {for(int i=0;i<N;i++){int a,b;cin>>a>>b;ARR[i]={a,b};}}
 
