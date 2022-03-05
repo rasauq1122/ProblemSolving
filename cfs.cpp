@@ -45,6 +45,7 @@
 #define repe(i,j,k)      for(int i=(j);i<=(k);i++)
 #define per(i,j,k)       for(int i=(k)-1;i>=(j);i--)
 #define pere(i,j,k)      for(int i=(k);i>=(j);i--)
+#define each(v,n)        for(auto n:v)
 
 #define sz(a)            (int)((a).size())
 
